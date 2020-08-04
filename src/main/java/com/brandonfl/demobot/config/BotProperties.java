@@ -1,4 +1,4 @@
-package bot.config;
+package com.brandonfl.demobot.config;
 
 import lombok.Data;
 import lombok.Getter;

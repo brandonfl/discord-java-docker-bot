@@ -1,4 +1,4 @@
-package bot.db.repository;
+package com.brandonfl.demobot.db.repository;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

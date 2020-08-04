@@ -1,4 +1,4 @@
-package bot.db.entity;
+package com.brandonfl.demobot.db.entity;
 
 import java.io.Serializable;
 import javax.persistence.Column;

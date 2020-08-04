@@ -1,7 +1,7 @@
-package bot.discordbot.command;
+package com.brandonfl.demobot.discordbot.command;
 
-import bot.config.BotProperties;
-import bot.discordbot.DiscordBot;
+import com.brandonfl.demobot.config.BotProperties;
+import com.brandonfl.demobot.discordbot.DiscordBot;
 import java.awt.Color;
 import lombok.RequiredArgsConstructor;
 import net.dv8tion.jda.api.EmbedBuilder;

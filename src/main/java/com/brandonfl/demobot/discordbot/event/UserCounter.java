@@ -1,7 +1,7 @@
-package bot.discordbot.event;
+package com.brandonfl.demobot.discordbot.event;
 
-import bot.db.entity.DiscordBotConfigEntity;
-import bot.discordbot.model.BotConfig;
+import com.brandonfl.demobot.db.entity.DiscordBotConfigEntity;
+import com.brandonfl.demobot.discordbot.model.BotConfig;
 import java.util.Optional;
 import javax.annotation.Nonnull;
 import net.dv8tion.jda.api.entities.Guild;
@@ -10,7 +10,7 @@ import net.dv8tion.jda.api.events.ReadyEvent;
 import net.dv8tion.jda.api.events.guild.member.GuildMemberJoinEvent;
 import net.dv8tion.jda.api.events.guild.member.GuildMemberLeaveEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import bot.db.repository.RepositoryContainer;
+import com.brandonfl.demobot.db.repository.RepositoryContainer;
 
 public class UserCounter extends ListenerAdapter {
 

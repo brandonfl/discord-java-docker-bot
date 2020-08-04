@@ -1,4 +1,4 @@
-package bot.discordbot.model;
+package com.brandonfl.demobot.discordbot.model;
 
 import lombok.Getter;
 

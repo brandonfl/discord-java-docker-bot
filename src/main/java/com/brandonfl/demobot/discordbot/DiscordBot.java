@@ -1,10 +1,10 @@
-package bot.discordbot;
+package com.brandonfl.demobot.discordbot;
 
-import bot.config.BotProperties;
-import bot.db.repository.RepositoryContainer;
-import bot.discordbot.command.Help;
-import bot.discordbot.command.PingPong;
-import bot.discordbot.event.UserCounter;
+import com.brandonfl.demobot.config.BotProperties;
+import com.brandonfl.demobot.db.repository.RepositoryContainer;
+import com.brandonfl.demobot.discordbot.command.Help;
+import com.brandonfl.demobot.discordbot.command.PingPong;
+import com.brandonfl.demobot.discordbot.event.UserCounter;
 import javax.annotation.PostConstruct;
 import javax.security.auth.login.LoginException;
 import net.dv8tion.jda.api.AccountType;
