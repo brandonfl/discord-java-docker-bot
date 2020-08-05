@@ -24,5 +24,5 @@ fi
 
 check_port
 
-docker run -d --rm --network dronizone-1920-thespringlords_default --link drone-manager-db -p $PHPMYADMIN_PORT:80 -e PMA_HOST=drone-manager-db -e PMA_USER=user -e PMA_PASSWORD=password phpmyadmin/phpmyadmin
+docker run -d --rm --network discord-java-docker-bot_default --link bot-mysql -p $PHPMYADMIN_PORT:80 -e PMA_HOST=bot-mysql -e PMA_USER=bot -e PMA_PASSWORD=bot phpmyadmin/phpmyadmin
 echo -e "\n Phpmyadmin started... http://localhost:${PHPMYADMIN_PORT}/"
