@@ -1,15 +1,9 @@
+FROM maven:alpine AS build
+COPY src /usr/src/bot/src
+COPY pom.xml /usr/src/bot
+RUN mvn -f /usr/src/bot/pom.xml clean package
+
 FROM openjdk:11-slim
-FROM maven:alpine
-
-# image layer
-WORKDIR /bot
-ADD pom.xml /bot
-RUN mvn verify clean --fail-never
-
-# Image layer: with the application
-COPY . /bot
-RUN mvn -v
-RUN mvn clean install -DskipTests
+COPY --from=build /usr/src/bot/target/bot.war /usr/local/lib/bot.war
 EXPOSE 8080
-ADD ./target/bot.war /bot/
-ENTRYPOINT ["java","-jar","/bot/bot.war"]
+ENTRYPOINT ["java","-jar","/usr/local/lib/bot.war"]
