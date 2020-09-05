@@ -25,7 +25,6 @@ jobs:
     - uses: docker/build-push-action@v1.1.0
       name: Build & push Docker image
       with:
-        image: discord-java-docker-bot
         tag_with_ref: true
         registry: docker.pkg.github.com
         repository: fontanylegall-brandon/discord-java-docker-bot
